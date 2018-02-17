@@ -6,4 +6,5 @@ RUN wget http://apache.mivzakim.net/tomcat/tomcat-8/v8.5.28/bin/apache-tomcat-8.
 RUN cd /tmp && tar xvfz tomcat.tar.gz
 RUN cp -Rv /tmp/apache-tomcat-8.5.28/* /usr/local/tomcat/
 EXPOSE 8080
+EXPOSE 8090
 CMD /usr/local/tomcat/bin/catalina.sh run
